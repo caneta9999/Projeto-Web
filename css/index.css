@@ -1,0 +1,93 @@
+div, header, nav, section, article, aside, footer{
+  margin: 0;
+  padding: 0;
+  display: block;
+  box-sizing: border-box;
+}
+body{
+  text-align: justify;
+  background-color: rgba(27,32,30,0.55);
+  border: 2px solid rgb(170,160,102);
+  border-radius: 5px;
+  width: 90%;
+  padding: 3px;
+  margin: auto
+}
+#cabecalho{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 5px;
+}
+#footer{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 5px;
+}
+#cabecalho,#footer{
+  background-color: rgb(216,222,231);
+  text-align: center;
+}
+#container{
+    background-color: rgb(190,196,185);
+    padding-left: 2px;
+}
+h2{
+    text-align: center;
+}
+@media only screen and (min-width: 720px){
+#total{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#dados{
+    font-size: 20px
+}
+}
+@media only screen and (max-width: 720px){
+div{
+      overflow: scroll;
+}}
+#img,#animacao{
+  text-align: center;
+}
+#dados,#form{
+  text-align: left;
+  padding-left: 2px;
+}
+#form,#dados,#img,#animacao{
+    height: 260px;
+    width: 100%;
+}
+#ienviar{
+    margin-bottom: 2px;
+}
+#dados,#animacao{
+  background-color: rgba(154,180,106,0.25);
+}
+#form,#img{
+  background-color: rgba(212, 179, 208, 0.5);
+}
+@keyframes changeImg {
+  0%{
+    background-image: url(../imgs/pesquisa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  50%{
+    background-image: url(../imgs/pesquisa1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  100%{
+    background-image: url(../imgs/pesquisa2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+#animacao{
+  animation: changeImg 15s 5;
+}
+
+#informacoes{
+  border-right: 0.5px solid black;
+}

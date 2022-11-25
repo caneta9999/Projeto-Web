@@ -1,2 +1,2 @@
 # Projeto-Web
-Projeto criado durante a disciplina de Web, com uso de HTML, CSS, JS e PHP.
+Projeto desenvolvido durante a disciplina web utilizando de HTML, CSS, JS e PHP
